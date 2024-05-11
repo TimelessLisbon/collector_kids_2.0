@@ -779,7 +779,7 @@ gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Brasileira_32EnigmaCo
 }{for(var i = 0, len = gdjs.Brasileira_32EnigmaCode.GDnext_9595sceneObjects1.length ;i < len;++i) {
     gdjs.Brasileira_32EnigmaCode.GDnext_9595sceneObjects1[i].setString("Brasileira Fim");
 }
-}{runtimeScene.getScene().getVariables().get("answer").setString("ANDRESSA");
+}{runtimeScene.getScene().getVariables().get("answer").setString("BRASILEIRA");
 }}
 
 }

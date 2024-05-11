@@ -779,7 +779,7 @@ gdjs.copyArray(runtimeScene.getObjects("next_scene"), gdjs.Bica_32EnigmaCode.GDn
 }{for(var i = 0, len = gdjs.Bica_32EnigmaCode.GDnext_9595sceneObjects1.length ;i < len;++i) {
     gdjs.Bica_32EnigmaCode.GDnext_9595sceneObjects1[i].setString("Bica Fim");
 }
-}{runtimeScene.getScene().getVariables().get("answer").setString("VERSUS");
+}{runtimeScene.getScene().getVariables().get("answer").setString("DUARTE BELO");
 }}
 
 }
