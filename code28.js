@@ -984,6 +984,9 @@ gdjs.copyArray(runtimeScene.getObjects("videobanner"), gdjs.S_46_32CarlosCode.GD
 }{for(var i = 0, len = gdjs.S_46_32CarlosCode.GDclueObjects1.length ;i < len;++i) {
     gdjs.S_46_32CarlosCode.GDclueObjects1[i].hide();
 }
+}{for(var i = 0, len = gdjs.S_46_32CarlosCode.GDanswerObjects1.length ;i < len;++i) {
+    gdjs.S_46_32CarlosCode.GDanswerObjects1[i].hide();
+}
 }{for(var i = 0, len = gdjs.S_46_32CarlosCode.GDVideo_9595ENObjects1.length ;i < len;++i) {
     gdjs.S_46_32CarlosCode.GDVideo_9595ENObjects1[i].pause();
 }
@@ -1258,9 +1261,13 @@ for (var i = 0, k = 0, l = gdjs.S_46_32CarlosCode.GDokObjects1.length;i<l;++i) {
 gdjs.S_46_32CarlosCode.GDokObjects1.length = k;
 }
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("answer"), gdjs.S_46_32CarlosCode.GDanswerObjects1);
 /* Reuse gdjs.S_46_32CarlosCode.GDstickersObjects1 */
 {for(var i = 0, len = gdjs.S_46_32CarlosCode.GDstickersObjects1.length ;i < len;++i) {
     gdjs.S_46_32CarlosCode.GDstickersObjects1[i].hide();
+}
+}{for(var i = 0, len = gdjs.S_46_32CarlosCode.GDanswerObjects1.length ;i < len;++i) {
+    gdjs.S_46_32CarlosCode.GDanswerObjects1[i].hide(false);
 }
 }}
 
@@ -1347,6 +1354,17 @@ for (var i = 0, k = 0, l = gdjs.S_46_32CarlosCode.GDanswerObjects1.length;i<l;++
     }
 }
 gdjs.S_46_32CarlosCode.GDanswerObjects1.length = k;
+if (isConditionTrue_1) {
+isConditionTrue_1 = false;
+for (var i = 0, k = 0, l = gdjs.S_46_32CarlosCode.GDanswerObjects1.length;i<l;++i) {
+    if ( gdjs.S_46_32CarlosCode.GDanswerObjects1[i].getText() != "" ) {
+        isConditionTrue_1 = true;
+        gdjs.S_46_32CarlosCode.GDanswerObjects1[k] = gdjs.S_46_32CarlosCode.GDanswerObjects1[i];
+        ++k;
+    }
+}
+gdjs.S_46_32CarlosCode.GDanswerObjects1.length = k;
+}
 }
 isConditionTrue_0 = isConditionTrue_1;
 }
